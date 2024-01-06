@@ -1,0 +1,18 @@
+docker cmd
+===========
+docker pull {image_name}
+docker run {image_name} echo {cmd}
+docker ps -a   //show running docker
+docker run -i -t {image_name} bash
+docker run -d -p {local_port}:{port} {image_name}
+docker run -d --name {container_name} -p 8080:8080 {docker_image} 
+docker rename {old_name} {new_name}
+docker exec -it {image_name} sh //hop into image
+docker stop {container_name}
+docker logs {container_name} -f
+docker stats
+docker inspect {image|container}
+docker rm -f {container_name} //-f refer to force
+docker rmi {image_name:TAG}
+docker images // list all image
+docker build -t {container_name} .
